@@ -618,6 +618,6 @@ def gumbel_softmax(logits, temperature, hard=False):
       """
     y = gumbel_softmax_sample(logits, temperature)
     if hard:
-        y_hard = tf.cast(tf.equal(y, tf.reduce_max(y, 1, keepdims=True)), y.dtype)
+        y_hard = tf.cast(tf.equal(y, tf.reduce_max(y, 1, keep_dims=True)), y.dtype)
         y = tf.stop_gradient(y_hard - y) + y
     return y

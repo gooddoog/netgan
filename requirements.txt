@@ -1,7 +1,7 @@
-numpy
+numpy==1.16.1
 scipy
 scikit-learn
-tensorflow
+tensorflow==1.4.0
 matplotlib
 powerlaw
 python-igraph
