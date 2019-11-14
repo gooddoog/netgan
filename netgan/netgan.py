@@ -548,8 +548,8 @@ class NetGAN:
         plt.plot(gen_losses[9::], label="Generator loss")
         plt.legend()
         plt.show()
-        if stopping is None:
-            saver.restore(self.session, save_file)
+#         if stopping is None:
+#             saver.restore(self.session, save_file)
         #### Training completed.
         log_dict = {"disc_losses": disc_losses, 'gen_losses': gen_losses, 'val_performances': val_performances,
                     'edge_overlaps': eo, 'generated_graphs': graphs}
